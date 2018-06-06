@@ -1,0 +1,222 @@
+h1{
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+h2{
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* NAVBAR - My leftside contains the namebox, the rightside has the list of pages*/
+#navbar{
+    background-color: #ffffff;
+    border-bottom: 1.5px solid #cccccc;
+    height: 90px;
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+#leftside{
+    margin-left: 15.7%;
+    float: left;
+}
+#namebox{
+    text-align: center;
+    justify-content: center;
+    background-color: #4aaaa5;
+    padding: 30px;
+    width: 250px;
+    float: left;
+}
+#rightside{
+    margin-right: 15.7%;
+    margin-top: 35px;
+    position: relative;
+    float: right;
+}
+li{
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 17px;
+    float: left;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid lightgrey;
+}
+li.lastitem{
+    border-right: none;
+}
+li a{
+    color: #777777;
+    text-decoration: none;
+}
+/*Body*/
+p{
+    color:#777777;
+    font-size: 17px;
+    line-height: 2;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#mainsection{
+    background: url('../images/new_year_background.png');
+    position: absolute;
+    width:100%;
+    margin-top: 91px;
+}
+#contentbox{
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    margin-left:15.7%;
+    margin-right:15.7%;
+    margin-top: 40px;
+    margin-bottom: 18%;
+    padding: 40px 20px 20px;
+}
+hr{
+    border: 1.5px solid #e2e2e2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+/*About Section*/
+#abouttext{
+    margin-top: -7px;
+}
+
+/* FOOTER */
+
+#footertext{
+      color:#e2e2e2;
+      font-size: 9px;
+      padding-bottom: 3px;
+  }
+#footer{
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+img{
+    float: left;
+    margin-right: 20px;
+}
+/*Contact Page & Form Styles*/
+input{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0.5px solid #e2e2e2;
+    width: 100%;
+}
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 8px 30px 12px;
+    width: auto;
+}
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 198px;
+    max-width: 100%;
+    border: 0.5px solid #e2e2e2;
+}
+form{
+    margin-top: -1px;
+}
+.form{
+    line-height: 1;
+}
+
+/*Portfolio Page Styles*/
+#hangman{
+ background-image: url('https://picsum.photos/275/205?image=1060');
+ float: left;
+}
+#rpg{
+    background-image: url('https://picsum.photos/275/205?image=1073');
+   }
+#trivia{
+    background-image: url('https://picsum.photos/275/205?image=1059');
+    float: left;
+}
+#rutgers{
+    background-image: url('https://picsum.photos/275/205?image=998');
+   }
+#rockpaper{
+    background-image: url('https://picsum.photos/275/205?image=819');
+}
+.innerbanner{
+    background-color: #4aaaa5;
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    font-size:22px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.portfolioitem{
+    height: 205px;
+    width: 275px;
+    margin-right: 40px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 800px) {
+	h1{
+        font-size: 20px;
+    }
+    #namebox{
+        width: 200px;
+        padding: 35px;
+    }
+    #rightside{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    li{
+        float: none;
+        border:none;
+        text-align: right;
+        margin-top:5px;
+    }
+}
+@media screen and (min-height: 732px) {
+    #mainsection{
+        height: 100vh;
+    }
+}
+/*Link Effects*/
+a:hover{
+    opacity: 0.5;
+}
